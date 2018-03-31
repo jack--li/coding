@@ -1,0 +1,11 @@
+指针的指针遍历
+char *strings[4] = {"1", "2", "3", NULL};
+
+int main(int argc, const char * argv[]) {
+    char **p = strings;
+    while (*p != NULL) {
+        printf("%s\n", *p);
+        p++;
+    }
+}
+p是指针的指针，想移到下一个指针元素，需要p++。*p就是数组元素。
